@@ -1,21 +1,23 @@
-public class Nurse {
+public class Doctor {
     private String name;
     private int employeeId;
     private int salary;
-    private int numberOfPatients;
+    private String specialty;
     private boolean beenPaid;
+
     public void drawBlood() {
         //patient blood levels drop
     }
+
     public void patientCare() {
         //patient health levels rise
     }
 
-    public Nurse(String name, int employeeId, int salary, int numberOfPatients) {
+    public Doctor(String name, int employeeId, int salary, String specialty) {
         this.name = name;
         this.employeeId = employeeId;
         this.salary = salary;
-        this.numberOfPatients = numberOfPatients;
+        this.specialty = specialty;
         this.beenPaid = false;
         this.drawBlood();
         this.patientCare();
@@ -41,11 +43,16 @@ public class Nurse {
         return salary;
     }
 
-    public int getNumberOfPatients() {
-        return numberOfPatients;
+    public String getSpecialty() {
+        return specialty;
+    }
+
+    public void setSpecialty(String specialty) {
+        this.specialty = specialty;
     }
 
     public boolean hasBeenPaid() {
         return beenPaid;
     }
 }
+

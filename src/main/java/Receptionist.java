@@ -40,4 +40,8 @@ public class Receptionist {
     public void wasOnPhone(boolean onPhone) {
         this.onPhone = onPhone;
     }
+
+    public boolean hasBeenPaid() {
+        return beenPaid;
+    }
 }
