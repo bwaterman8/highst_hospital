@@ -2,13 +2,15 @@ public class Janitor {
     private String name;
     private int employeeId;
     private int salary;
+    private boolean isSweeping;
     private boolean beenPaid;
 
-    public Janitor(String name, int employeeId, int salary) {
+    public Janitor(String name, int employeeId, int salary,boolean isSweeping) {
         this.name = name;
         this.employeeId = employeeId;
         this.salary = salary;
-        this.beenPaid = beenPaid;
+        this.isSweeping = isSweeping;
+        this.beenPaid = false;
     }
 
     public String getName() {
@@ -30,7 +32,11 @@ public class Janitor {
     public int getSalary() {
         return salary;
     }
-    
+
+    public boolean getIsSweeping() {
+        return isSweeping;
+    }
+
     public boolean hasBeenPaid() {
         return beenPaid;
     }
