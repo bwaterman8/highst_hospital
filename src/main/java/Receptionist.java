@@ -6,7 +6,7 @@ public class Receptionist extends Employee {
         this.onPhone = onPhone;
     }
 
-    public boolean getisOnPhone() {
+    public boolean getIsOnPhone() {
         return onPhone;
     }
 
