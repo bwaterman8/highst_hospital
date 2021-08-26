@@ -39,7 +39,21 @@ public class Application {
         janitors.add(brad);
         janitors.add(ian);
 
-        Hospital riverside = new Hospital("Riverside Methodist Hopstal", doctors, nurses, receptionists,janitors);
-        System.out.println(riverside);
+        Patient ted = new Patient("ted");
+        Patient turk = new Patient("turk");
+        Patient elliot = new Patient("elliot");
+
+        List<Patient> patients = new ArrayList<>();
+        patients.add(ted);
+        patients.add(turk);
+        patients.add(elliot);
+
+        Hospital riverside = new Hospital("Riverside Methodist Hospital", doctors, nurses, receptionists, janitors, patients);
+//        System.out.println(riverside);
+//        Hospital.payEmployee(ian);
+//        System.out.println(ian);
+//        Hospital.payEmployee(sturgess);
+//        System.out.println(riverside);
+        System.out.println(ted);
     }
 }

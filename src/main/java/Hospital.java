@@ -6,13 +6,15 @@ public class Hospital {
     private List<Nurse> nurses;
     private List<Receptionist> receptionists;
     private List<Janitor> janitors;
+    private List<Patient> patients;
 
-    public Hospital(String name, List<Doctor> doctors, List<Nurse> nurses, List<Receptionist> receptionists, List<Janitor> janitors) {
+    public Hospital(String name, List<Doctor> doctors, List<Nurse> nurses, List<Receptionist> receptionists, List<Janitor> janitors, List<Patient> patients) {
         this.name = name;
         this.doctors = doctors;
         this.nurses = nurses;
         this.receptionists = receptionists;
         this.janitors = janitors;
+        this.patients = patients;
     }
 
     public String getName() {
@@ -55,8 +57,16 @@ public class Hospital {
         this.janitors = janitors;
     }
 
-    public static void payEmployee() {
-        Employee.isBeenPaid();
+    public static void payEmployee(Employee employee) {
+        Employee.beenPaid = true;
+    }
+
+    public List<Patient> getPatients() {
+        return patients;
+    }
+
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
     }
 
     @Override

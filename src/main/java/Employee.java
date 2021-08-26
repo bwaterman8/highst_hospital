@@ -2,7 +2,7 @@ public class Employee {
     public String name;
     public int employeeId;
     public int salary;
-    public boolean beenPaid;
+    public static boolean beenPaid;
 
     public Employee (String name, int employeeId, int salary, boolean beenPaid) {
         this.name = name;
@@ -35,13 +35,9 @@ public class Employee {
         this.salary = salary;
     }
 
-    public static boolean isBeenPaid() {
-        return true;
-    }
-
-    public void setBeenPaid(boolean beenPaid) {
-        this.beenPaid = beenPaid;
-    }
+//    public void setBeenPaid(boolean beenPaid) {
+//        this.beenPaid = false;
+//    }
 
     @Override
     public String toString() {
