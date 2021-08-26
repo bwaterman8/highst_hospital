@@ -10,11 +10,11 @@ public class Nurse extends Employee {
         return numberOfPatients;
     }
 
-    public static void drawBlood(int amount) {
-        Patient.bloodDrawn(amount);
+    public static void drawBlood(int level) {
+        Patient.bloodDrawn(5);
     }
-    public static void patientCare(int amount) {
-        Patient.receiveCare(amount);
+    public static void patientCare(int caring) {
+        Patient.receiveCare(2);
     }
 
 
