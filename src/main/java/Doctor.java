@@ -14,12 +14,12 @@ public class Doctor extends Employee {
         this.specialty = specialty;
     }
 
-    public static void drawBlood(int level) {
-        Patient.bloodDrawn(10);
+    public static void drawBlood(Patient patient) {
+        Patient.bloodLevel -= 10;
     }
 
-    public static void patientCare(int caring) {
-        Patient.receiveCare(5);
+    public static void giveCare(Patient patient) {
+        Patient.healthLevel += 5;
     }
 
     @Override

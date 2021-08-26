@@ -55,5 +55,18 @@ public class Application {
 //        Hospital.payEmployee(sturgess);
 //        System.out.println(riverside);
         System.out.println(ted);
+        System.out.println(turk);
+
+        Nurse.drawBlood(ted);
+        System.out.println(ted);
+        System.out.println(turk);
+        Doctor.giveCare(elliot);
+        System.out.println(turk);
+//        Nurse.patientCare(ted);
+//        System.out.println(ted);
+//        Doctor.drawBlood(turk);
+//        System.out.println(turk);
+//        Doctor.giveCare(turk);
+//        System.out.println(turk);
     }
 }

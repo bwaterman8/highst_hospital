@@ -1,16 +1,16 @@
-Receptionist.java
- Receptionist
-Janitor.java
- Janitor
 Employee.java
  Employee
-Hospital.java
- Hospital
-Application.java
- Application
-Doctor.java
- Doctor
-Nurse.java
- Nurse
+Receptionist.java
+ Receptionist
 Patient.java
  Patient
+Janitor.java
+ Janitor
+Hospital.java
+ Hospital
+Nurse.java
+ Nurse
+Doctor.java
+ Doctor
+Application.java
+ Application

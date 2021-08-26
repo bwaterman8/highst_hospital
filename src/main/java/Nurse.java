@@ -10,12 +10,14 @@ public class Nurse extends Employee {
         return numberOfPatients;
     }
 
-    public static void drawBlood(int level) {
-        Patient.bloodDrawn(5);
+    public static void drawBlood(Patient patient) {
+        Patient.bloodLevel -= 5;
     }
-    public static void patientCare(int caring) {
-        Patient.receiveCare(2);
+    public static void patientCare(Patient patient) {
+        Patient.healthLevel += 2;
     }
+
+
 
     @Override
     public String toString() {
