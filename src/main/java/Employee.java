@@ -1,8 +1,8 @@
 public class Employee {
-    private String name;
-    private int employeeId;
-    private int salary;
-    private boolean beenPaid;
+    public String name;
+    public int employeeId;
+    public int salary;
+    public boolean beenPaid;
 
     public Employee (String name, int employeeId, int salary, boolean beenPaid) {
         this.name = name;
@@ -41,5 +41,15 @@ public class Employee {
 
     public void setBeenPaid(boolean beenPaid) {
         this.beenPaid = beenPaid;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", employeeId=" + employeeId +
+                ", salary=" + salary +
+                ", beenPaid=" + beenPaid +
+                '}';
     }
 }

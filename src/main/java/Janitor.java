@@ -14,4 +14,13 @@ public class Janitor extends Employee{
          this.isSweeping = isSweeping;
     }
 
+    @Override
+    public String toString() {
+        return "{Janitor " + name  +
+                ", employeeId=" + employeeId +
+                ", salary=" + salary +
+                ", beenPaid=" + beenPaid +
+                ", isSweeping=" + isSweeping +
+                '}';
+    }
 }

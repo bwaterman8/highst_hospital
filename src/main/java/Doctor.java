@@ -22,5 +22,15 @@ public class Doctor extends Employee {
         Patient.receiveCare(5);
     }
 
+    @Override
+    public String toString() {
+        return "{Doctor " + name  +
+                ", employeeId=" + employeeId +
+                ", salary=" + salary +
+                ", beenPaid=" + beenPaid +
+                ", specialty='" + specialty + '\'' +
+                '}';
+
+    }
 }
 

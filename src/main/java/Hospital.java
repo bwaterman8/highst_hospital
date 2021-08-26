@@ -58,4 +58,15 @@ public class Hospital {
     public static void payEmployee() {
         Employee.isBeenPaid();
     }
+
+    @Override
+    public String toString() {
+        return "Hospital{" +
+                "name='" + name + '\'' +
+                ", doctors=" + doctors +
+                ", nurses=" + nurses +
+                ", receptionists=" + receptionists +
+                ", janitors=" + janitors +
+                '}';
+    }
 }

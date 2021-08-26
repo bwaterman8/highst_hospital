@@ -14,4 +14,13 @@ public class Receptionist extends Employee {
         this.onPhone = onPhone;
     }
 
+    @Override
+    public String toString() {
+        return "{Receptionist " + name  +
+                ", employeeId=" + employeeId +
+                ", salary=" + salary +
+                ", beenPaid=" + beenPaid +
+                ", onThePhone=" + onPhone +
+                '}';
+    }
 }

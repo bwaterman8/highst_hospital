@@ -17,5 +17,13 @@ public class Nurse extends Employee {
         Patient.receiveCare(2);
     }
 
-
+    @Override
+    public String toString() {
+        return "{Nurse " + name  +
+                ", employeeId=" + employeeId +
+                ", salary=" + salary +
+                ", beenPaid=" + beenPaid +
+                ", numberOfPatients=" + numberOfPatients +
+                '}';
+    }
 }
