@@ -35,8 +35,8 @@ public class Employee {
         this.salary = salary;
     }
 
-    public boolean isBeenPaid() {
-        return beenPaid;
+    public static boolean isBeenPaid() {
+        return true;
     }
 
     public void setBeenPaid(boolean beenPaid) {
