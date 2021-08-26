@@ -1,39 +1,12 @@
-public class Receptionist {
-    private String name;
-    private int employeeId;
-    private int salary;
+public class Receptionist extends Employee {
     private boolean onPhone;
-    private boolean beenPaid;
 
-    public Receptionist(String name, int employeeId, int salary, boolean onPhone) {
-        this.name = name;
-        this.employeeId = employeeId;
-        this.salary = salary;
+    public Receptionist(String name, int employeeId, int salary, boolean beenPaid, boolean onPhone) {
+        super(name, employeeId, salary, beenPaid);
         this.onPhone = onPhone;
-        this.beenPaid = false;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public int getSalary() {
-        return salary;
-    }
-
-    public boolean isOnPhone() {
+    public boolean getisOnPhone() {
         return onPhone;
     }
 
@@ -41,7 +14,4 @@ public class Receptionist {
         this.onPhone = onPhone;
     }
 
-    public boolean hasBeenPaid() {
-        return beenPaid;
-    }
 }
